@@ -15,6 +15,6 @@ class Transfer
 
   def execute_transfer
     
-  end 
+  end
 
 end
