@@ -17,7 +17,7 @@ class Transfer
     if @sender.balance > @amount
       @sender.balance -= @amount
       @reciver.balance += @amount
-      
+    end 
   end
 
 end
