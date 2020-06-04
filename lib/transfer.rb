@@ -1,3 +1,5 @@
+  require '.pry'
+
 class Transfer
     attr_accessor :sender, :receiver, :amount, :status
 
@@ -17,7 +19,8 @@ class Transfer
       @sender.balance -= @amount
       @receiver.balance += @amount
       @status = "complete"
-    else
+    elsif
+      valid? = false 
       @status = "rejected"
       return "Transaction rejected. Please check your account balance."
     end
